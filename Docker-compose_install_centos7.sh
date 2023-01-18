@@ -1,6 +1,6 @@
 #!/bin/bash
 
-  # Author----Kazeem
+  # Author----Ypokwo
   #Date-------Nov-02-2022
   #Description---Script that will install Docker-compose on Centos7
 
