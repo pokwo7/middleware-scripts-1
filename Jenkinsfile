@@ -5,7 +5,7 @@ pipeline {
         stage("create zip file"){
             steps{
                
-           sh 'zip mdwScript-$(date +%y%m%d-%H%M%S).zip *  --exclude Jenkinsfile README.md '  
+           sh 'zip mdwScript-$(date +%d%m%y-%H%M%S).zip *  --exclude Jenkinsfile README.md '  
             
             }
         }
