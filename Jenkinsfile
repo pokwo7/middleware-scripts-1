@@ -9,13 +9,7 @@ pipeline {
             
             }
         }
-        
-	stage('Build') {
-            steps {
-               slackSend channel: 'dev-env', message: 'Build message'
-            }
-        }
-    
+         
     }
   }
 
