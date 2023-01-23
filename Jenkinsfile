@@ -12,7 +12,7 @@ pipeline {
         
 	stage('Build') {
             steps {
-                // Build steps here
+               slackSend channel: 'dev-env', message: 'Build message'
             }
         }
     
