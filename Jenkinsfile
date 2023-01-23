@@ -16,14 +16,6 @@ pipeline {
             }
         }
     
-    post {
-        success {
-            slackSend color: 'good', message: 'Build succeeded!'
-        }
-        failure {
-            slackSend color: 'danger', message: 'Build failed!'
-        }
-      }
     }
   }
-}
+
