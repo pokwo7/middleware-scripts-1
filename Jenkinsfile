@@ -23,7 +23,7 @@ pipeline {
         failure {
             slackSend color: 'danger', message: 'Build failed!'
         }
-
+      }
     }
   }
 }
