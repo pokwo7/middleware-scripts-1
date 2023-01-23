@@ -10,5 +10,20 @@ pipeline {
             }
         }
         
+	stage('Build') {
+            steps {
+                // Build steps here
+            }
+        }
     }
+    post {
+        success {
+            slackSend color: 'good', message: 'Build succeeded!'
+        }
+        failure {
+            slackSend color: 'danger', message: 'Build failed!'
+        }
+
+    }
+
 }
