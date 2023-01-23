@@ -15,7 +15,7 @@ pipeline {
                 // Build steps here
             }
         }
-    }
+    
     post {
         success {
             slackSend color: 'good', message: 'Build succeeded!'
@@ -25,5 +25,5 @@ pipeline {
         }
 
     }
-
+  }
 }
